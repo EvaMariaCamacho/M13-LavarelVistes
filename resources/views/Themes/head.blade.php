@@ -1,0 +1,47 @@
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Hau Nguyen">
+    <meta name="keywords" content="au theme template">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <!-- Title Page-->
+    <title>Reserva</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="Admin/css/font-face.css" rel="stylesheet" media="all">
+    <link href="Admin/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="Admin/vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="Admin/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="Admin/vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="Admin/vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="Admin/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="Admin/vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="Admin/vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="Admin/vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="Admin/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="Admin/vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+
+        <!-- Main CSS-->
+    <link href="Admin/css/theme.css" rel="stylesheet" media="all">
+
+
+
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
+
+</head>
