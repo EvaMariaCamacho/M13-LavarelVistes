@@ -23,17 +23,17 @@
                             </div>
                             <div class="account-dropdown js-dropdown">
                                 <div class="info clearfix">
-                                    <div class="image">
+                                   <!-- <div class="image">
                                         <a href="#">
                                             <img src="Admin/images/icon/avatar-01.jpg" alt="John Doe" />
                                         </a>
-                                    </div>
-                                    <div class="content">
+                                    </div>-->
+                                    <!--<div class="content">
                                         <h5 class="name">
                                             <a href="#">john doe</a>
                                         </h5>
                                         <span class="email">johndoe@example.com</span>
-                                    </div>
+                                    </div>-->
                                     <div class="account-dropdown__footer">
                                         <ul>
                                             @guest
