@@ -1,17 +1,50 @@
 <x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard for Blog Writer') }}
-        </h2>
-    </x-slot>
-
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 bg-white border-b border-gray-200">
-                    You're logged in as a blogwriter!
+      <x-slot name="header">
+            <section class="welcome p-t-10">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="title-4">BIENVENIDO
+                                <span>{{Auth::user()->name}}</span>
+                            </h1>
+                            <hr class="line-seprate">
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</x-app-layout>
+            </section>
+      </x-slot>
+
+ <section class="p-t-20">
+                <div class="container">
+                    <div class="row">
+                        <div class="card-body">
+                    <div class="typo-headers">
+                      <h2 class="pb-2 display-5">Modifique las reservas</h2>
+                    </div><br>
+                    <div>
+                            <h3>Ordered</h3><br>
+                            <ol class="vue-ordered">
+                              <li>
+                                A wide variety of hypotheses have been proposed to account for the evolution of the striking stripes of zebras.
+                              </li>
+                              <li>The more traditional of these (1 and 2, below) relate to camouflage.</li>
+                              <li>The vertical striping may help the zebra hide in the grass by disrupting its outline.</li>
+                              <li>
+                                In addition, even at moderate distances, the striking striping merges to an apparent grey.
+                                <ul class="vue-list-inner">
+                                  <li>However, the camouflage has been contested with arguments that most of a zebra's predator.
+                                  </li>
+                                  <li>Such as lions and hyenas cannot see well at a distance.</li>
+                                  <li>More likely to have smelled or heard a zebra.</li>
+                                </ul>
+                              </li>
+                              <li>Before seeing it from a distance, especially at night.</li>
+                            </ol>
+                          </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+  </x-app-layout>
+  @include('Themes.footer')

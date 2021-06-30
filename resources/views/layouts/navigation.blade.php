@@ -1,3 +1,44 @@
+@include('Themes.head')
+
+<body class="animsition">
+    <div class="page-wrapper">
+<header class="header-desktop3 d-none d-lg-block">
+        <div class="section__content section__content--p35">
+            <div class="header3-wrap">
+                <div class="header__logo">
+                    <div class="typo-headers">
+                      <h1 class="pb-2 display-4 text-white">Hotel de Vacaciones</h1>
+                    </div>
+                </div>
+                    <div class="header__navbar">
+                        
+                    </div>
+                    <div class="header__tool">
+                         <div class="account-wrap">
+                            <div class="account-item account-item--style2 clearfix js-item-menu">
+                                <div class="image">
+                                    <img src="Admin/images/icon/avatar-01.jpg" alt="John Doe" />
+                                </div>
+                                   <div class="content">
+                                            <h5 class="name">
+                                                <a href="#">{{Auth::user()->name}}</a>
+                                            </h5>
+                                            <span class="email">{{Auth::user()->email}}</span>
+                                        </div>
+                                    </div>
+                                <div class="account-dropdown js-dropdown">
+                                    <div class="info clearfix">
+                               <div class="account-dropdown__footer">
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </header>
 <nav x-data="{ open: false }" class="bg-white border-b border-gray-100">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -6,7 +47,7 @@
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <x-application-logo class="block h-10 w-auto fill-current text-gray-600" />
+                       
                     </a>
                 </div>
 
@@ -37,7 +78,6 @@
                     </x-nav-link>
                 </div>
                 @endif
-
             </div>
 
             <!-- Settings Dropdown -->
@@ -45,7 +85,7 @@
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
                         <button class="flex items-center text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
-                            <div>{{ Auth::user()->name }}</div>
+                            <div>Salir</div>
 
                             <div class="ml-1">
                                 <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -54,12 +94,10 @@
                             </div>
                         </button>
                     </x-slot>
-
                     <x-slot name="content">
                         <!-- Authentication -->
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
-
                             <x-dropdown-link :href="route('logout')" onclick="event.preventDefault();
                                                 this.closest('form').submit();">
                                 {{ __('Logout') }}
@@ -118,3 +156,6 @@
         </div>
     </div>
 </nav>
+
+
+            

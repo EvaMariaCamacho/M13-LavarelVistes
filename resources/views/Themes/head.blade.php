@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <!-- Required meta tags-->
     <meta charset="UTF-8">
@@ -5,10 +8,9 @@
     <meta name="description" content="au theme template">
     <meta name="author" content="Hau Nguyen">
     <meta name="keywords" content="au theme template">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Title Page-->
-    <title>Reserva</title>
+    <title>Dashboard 3</title>
 
     <!-- Fontfaces CSS-->
     <link href="Admin/css/font-face.css" rel="stylesheet" media="all">
@@ -28,20 +30,7 @@
     <link href="Admin/vendor/select2/select2.min.css" rel="stylesheet" media="all">
     <link href="Admin/vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
 
-
-        <!-- Main CSS-->
+    <!-- Main CSS-->
     <link href="Admin/css/theme.css" rel="stylesheet" media="all">
-
-
-
-
-    <!-- Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
 
 </head>
