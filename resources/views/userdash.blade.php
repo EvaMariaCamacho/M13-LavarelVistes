@@ -4,8 +4,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1 class="title-4">BIENVENIDO
-                                <span>{{Auth::user()->name}}</span>
+                            <h1 class="title-4">BIENVENID@
+                                <font style="text-transform: uppercase;"><span>{{Auth::user()->name}}</span></font>
                             </h1>
                             <hr class="line-seprate">
                         </div>

@@ -62,6 +62,9 @@
                     <x-nav-link :href="route('dashboard.admin')" :active="request()->routeIs('dashboard.admin')">
                         {{ __('Admin') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('booking.index')" :active="request()->routeIs('booking.index')">
+                        {{ __('Booking') }}
+                    </x-nav-link>
                 </div>
                 @endif
                 @if (Auth::user()->hasRole('user'))
@@ -158,4 +161,4 @@
 </nav>
 
 
-            
+      

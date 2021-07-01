@@ -19,7 +19,8 @@
                     <div class="row">
                         <div class="card-body">
                     <div class="typo-headers">
-                      <h2 class="pb-2 display-5">Administrador de reservas</h2>
+                      <h2 class="pb-2 display-5">Realice su reserva</h2>
+                      <h3 class="pb-2 display-5">Y disfrute de sus vacaciones</h3>
                     </div><br>
                     <div>
                             <h3>Ordered</h3><br>
