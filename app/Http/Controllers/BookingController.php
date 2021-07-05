@@ -47,7 +47,7 @@ class BookingController extends Controller
 
         $booking = Booking::create($request->all());
 
-        return redirect()->route('bookings.index')
+        return redirect()->route('booking.index')
             ->with('success', 'Booking created successfully.');
     }
 
@@ -90,7 +90,7 @@ class BookingController extends Controller
 
         $booking->update($request->all());
 
-        return redirect()->route('bookings.index')
+        return redirect()->route('booking.index')
             ->with('success', 'Booking updated successfully');
     }
 
@@ -103,7 +103,7 @@ class BookingController extends Controller
     {
         $booking = Booking::find($id)->delete();
 
-        return redirect()->route('bookings.index')
+        return redirect()->route('booking.index')
             ->with('success', 'Booking deleted successfully');
     }
 }

@@ -13,24 +13,27 @@
     <title>Dashboard 3</title>
 
     <!-- Fontfaces CSS-->
-    <link href="Admin/css/font-face.css" rel="stylesheet" media="all">
-    <link href="Admin/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
-    <link href="Admin/vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
-    <link href="Admin/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="{{ asset('Admin/css/font-face.css') }}" rel="stylesheet" media="all">
+    <link href="{{ asset('Admin/vendor/font-awesome-4.7/css/font-awesome.min.css') }}" rel="stylesheet" media="all">
+    <link href="{{ asset('Admin/vendor/font-awesome-5/css/fontawesome-all.min.css') }}" rel="stylesheet" media="all">
+    <link href="{{ asset('Admin/vendor/mdi-font/css/material-design-iconic-font.min.css') }}" rel="stylesheet" media="all">
 
     <!-- Bootstrap CSS-->
-    <link href="Admin/vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+    <link href="{{ asset('Admin/vendor/bootstrap-4.1/bootstrap.min.css') }}" rel="stylesheet" media="all">
 
     <!-- Vendor CSS-->
-    <link href="Admin/vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
-    <link href="Admin/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
-    <link href="Admin/vendor/wow/animate.css" rel="stylesheet" media="all">
-    <link href="Admin/vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
-    <link href="Admin/vendor/slick/slick.css" rel="stylesheet" media="all">
-    <link href="Admin/vendor/select2/select2.min.css" rel="stylesheet" media="all">
-    <link href="Admin/vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+    <link href="{{ asset('Admin/vendor/animsition/animsition.min.css') }}" rel="stylesheet" media="all">
+    <link href="{{ asset('Admin/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css') }}" rel="stylesheet" media="all">
+    <link href="{{ asset('Admin/vendor/wow/animate.css') }}" rel="stylesheet" media="all">
+    <link href="{{ asset('Admin/vendor/css-hamburgers/hamburgers.min.css') }}" rel="stylesheet" media="all">
+    <link href="{{ asset('Admin/vendor/slick/slick.css" rel="stylesheet') }}" media="all">
+    <link href="{{ asset('Admin/vendor/select2/select2.min.css') }}" rel="stylesheet" media="all">
+    <link href="{{ asset('Admin/vendor/perfect-scrollbar/perfect-scrollbar.css') }}" rel="stylesheet" media="all">
 
     <!-- Main CSS-->
-    <link href="Admin/css/theme.css" rel="stylesheet" media="all">
+    <link href="{{ asset('Admin/css/theme.css') }}" rel="stylesheet" media="all">
 
 </head>
+
+<body class="animsition">
+<div class="page-wrapper">

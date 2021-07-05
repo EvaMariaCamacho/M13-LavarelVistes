@@ -59,26 +59,35 @@
                 </div>
                  @if (Auth::user()->hasRole('admin'))
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('dashboard.admin')" :active="request()->routeIs('dashboard.admin')">
+                   <!-- <x-nav-link :href="route('dashboard.admin')" :active="request()->routeIs('dashboard.admin')">
                         {{ __('Admin') }}
-                    </x-nav-link>
+                    </x-nav-link>-->
                     <x-nav-link :href="route('booking.index')" :active="request()->routeIs('booking.index')">
-                        {{ __('Booking') }}
+                        {{ __('Bookings') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('cliente.index')" :active="request()->routeIs('cliente.index')">
+                        {{ __('Clientes') }}
                     </x-nav-link>
                 </div>
                 @endif
                 @if (Auth::user()->hasRole('user'))
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('dashboard.myprofile')" :active="request()->routeIs('dashboard.myprofile')">
+                    <!--<x-nav-link :href="route('dashboard.myprofile')" :active="request()->routeIs('dashboard.myprofile')">
                         {{ __('My Profile') }}
-                    </x-nav-link>
+                    </x-nav-link>-->
+                <x-nav-link :href="route('booking.index')" :active="request()->routeIs('booking.index')">
+                        {{ __('Bookings') }}
+                </x-nav-link>
                 </div>
                 @endif
                 @if (Auth::user()->hasRole('blogwriter'))
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('dashboard.postcreate')" :active="request()->routeIs('dashboard.postcreate')">
+                    <!--<x-nav-link :href="route('dashboard.postcreate')" :active="request()->routeIs('dashboard.postcreate')">
                         {{ __('Create a new Blog Post') }}
-                    </x-nav-link>
+                    </x-nav-link>-->
+                 <x-nav-link :href="route('booking.index')" :active="request()->routeIs('booking.index')">
+                        {{ __('Bookings') }}
+                </x-nav-link>  
                 </div>
                 @endif
             </div>

@@ -7,7 +7,7 @@
 @include('Themes.header_movile')
 
         <!-- PAGE CONTENT-->
-@yield('content')
+
         <div class="page-content--bgf7">
             <!-- BREADCRUMB-->
             <section class="au-breadcrumb2">
