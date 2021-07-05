@@ -36,8 +36,9 @@
 </head>
 
 <body class="animsition">
-<div class="page-wrapper">
 
+<div class="page-wrapper">
+@include('Themes.header')
     <section class="content container-fluid">
         <div class="">
             <div class="col-md-12">

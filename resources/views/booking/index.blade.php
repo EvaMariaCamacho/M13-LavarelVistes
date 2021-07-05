@@ -37,7 +37,8 @@
 
 <body class="animsition">
 <div class="page-wrapper">        
-        
+@include('Themes.header')
+
         
         <!-- PAGE CONTENT-->
 
@@ -45,9 +46,18 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="card">
+                      <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="title-4">BIENVENID@
+                                <font style="text-transform: uppercase;"><span>{{Auth::user()->name}}</span></font>
+                            </h1>
+                            <hr class="line-seprate">
+                        </div>
+                    </div>
+                </div>
                     <div class="card-header">
-                        <div style="display: flex; justify-content: space-between; align-items: center;">
-
+                      
                             <span id="card_title">
                                 {{ __('Booking') }}
                             </span>

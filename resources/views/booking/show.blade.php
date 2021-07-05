@@ -37,12 +37,12 @@
 
 <body class="animsition">
 <div class="page-wrapper">
-
+@include('Themes.header')
 
 @section('template_title')
-    {{ $booking->name ?? 'Show Booking' }}
+    {{ $bookings->name ?? 'Show Booking' }}
 
-
+@endsection
 
     <section class="content container-fluid">
         <div class="row">
@@ -61,23 +61,23 @@
                         
                         <div class="form-group">
                             <strong>Clientes Id:</strong>
-                            {{ $booking->clientes_id }}
+                            {{ $bookings->clientes_id }}
                         </div>
                         <div class="form-group">
                             <strong>Habitacion:</strong>
-                            {{ $booking->habitacion }}
+                            {{ $bookings->habitacion }}
                         </div>
                         <div class="form-group">
                             <strong>Ocupacion:</strong>
-                            {{ $booking->ocupacion }}
+                            {{ $bookings->ocupacion }}
                         </div>
                         <div class="form-group">
                             <strong>Entrada:</strong>
-                            {{ $booking->entrada }}
+                            {{ $bookings->entrada }}
                         </div>
                         <div class="form-group">
                             <strong>Salida:</strong>
-                            {{ $booking->salida }}
+                            {{ $bookings->salida }}
                         </div>
 
                     </div>
@@ -97,6 +97,7 @@
                     </div>
                 </div>
             </section>
+
             <!-- END COPYRIGHT-->
         </div>
 

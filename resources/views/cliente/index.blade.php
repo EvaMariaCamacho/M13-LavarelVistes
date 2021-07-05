@@ -36,11 +36,22 @@
 </head>
 
 <body class="animsition">
+@include('Themes.header')
 <div class="page-wrapper">
-    <div class="container-fluid">
-        <div class="row">
+    <div class="container-fluid">  
+        <div class="row">  
             <div class="col-sm-12">
+                
                 <div class="card">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="title-4">BIENVENID@
+                                <font style="text-transform: uppercase;"><span>{{Auth::user()->name}}</span></font>
+                            </h1>
+                            <hr class="line-seprate">
+                        </div>
+                    </div>
+                </div>
                     <div class="card-header">
                         <div style="display: flex; justify-content: space-between; align-items: center;">
 

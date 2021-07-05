@@ -39,8 +39,10 @@
 <div class="page-wrapper">
 
 @section('template_title')
-    {{ $cliente->name ?? 'Show Cliente' }}
-    
+    {{ $clientes->name ?? 'Show Cliente' }}
+@endsection
+
+@include('Themes.header')
     <section class="content container-fluid">
         <div class="row">
             <div class="col-md-12">

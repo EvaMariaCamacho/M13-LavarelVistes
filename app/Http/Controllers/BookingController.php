@@ -31,8 +31,8 @@ class BookingController extends Controller
      */
     public function create()
     {
-        $booking = new Booking();
-        return view('booking.create', compact('booking'));
+        $bookings = new Booking();
+        return view('booking.create', compact('bookings'));
     }
 
     /**
@@ -45,7 +45,7 @@ class BookingController extends Controller
     {
         request()->validate(Booking::$rules);
 
-        $booking = Booking::create($request->all());
+        $bookings = Booking::create($request->all());
 
         return redirect()->route('booking.index')
             ->with('success', 'Booking created successfully.');
@@ -59,9 +59,9 @@ class BookingController extends Controller
      */
     public function show($id)
     {
-        $booking = Booking::find($id);
+        $bookings = Booking::find($id);
 
-        return view('booking.show', compact('booking'));
+        return view('booking.show', compact('bookings'));
     }
 
     /**
@@ -72,9 +72,9 @@ class BookingController extends Controller
      */
     public function edit($id)
     {
-        $booking = Booking::find($id);
+        $bookings = Booking::find($id);
 
-        return view('booking.edit', compact('booking'));
+        return view('booking.edit', compact('bookings'));
     }
 
     /**
@@ -84,11 +84,11 @@ class BookingController extends Controller
      * @param  Booking $booking
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Booking $booking)
+    public function update(Request $request, Booking $bookings)
     {
         request()->validate(Booking::$rules);
 
-        $booking->update($request->all());
+        $bookings->update($request->all());
 
         return redirect()->route('booking.index')
             ->with('success', 'Booking updated successfully');
@@ -101,7 +101,7 @@ class BookingController extends Controller
      */
     public function destroy($id)
     {
-        $booking = Booking::find($id)->delete();
+        $bookings = Booking::find($id)->delete();
 
         return redirect()->route('booking.index')
             ->with('success', 'Booking deleted successfully');

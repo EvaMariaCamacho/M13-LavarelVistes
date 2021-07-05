@@ -14,15 +14,15 @@
                          <div class="account-wrap">
                             <div class="account-item account-item--style2 clearfix js-item-menu">
                                 <div class="image">
-                                    <img src="Admin/images/icon/avatar-01.jpg" alt="John Doe" />
+                                    <img src="{{ asset('Admin/images/icon/avatar-01.jpg') }}" alt="" />
                                 </div>
                                 <div class="content">
-                                    <a class="js-acc-btn" href="#">Entrar</a>
+                                    <a class="js-acc-btn" href="#">Acceso</a>
                                 </div>
                                 <div class="account-dropdown js-dropdown">
                                     <div class="info clearfix">
                                <div class="account-dropdown__footer">
-                                        <ul>
+                                        <ul style="list-style: none">
                                             @guest
                                             <li>
                                                 <a class="nav-link" href="{{ route('login') }}">

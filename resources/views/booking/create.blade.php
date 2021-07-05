@@ -36,6 +36,7 @@
 </head>
 
 <body class="animsition">
+@include('Themes.header')
 <div class="page-wrapper">
     <section class="content container-fluid">
         <div class="row">
@@ -99,3 +100,8 @@
 
     <!-- Main JS-->
     <script src="{{ asset('Admin/js/main.js')}}"></script>
+
+</body>
+
+</html>
+<!-- end document-->

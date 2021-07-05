@@ -36,6 +36,7 @@
 </head>
 
 <body class="animsition">
+@include('Themes.header')
 <div class="page-wrapper">
 
     <section class="content container-fluid">
@@ -49,7 +50,7 @@
                         <span class="card-title">Update Booking</span>
                     </div>
                     <div class="card-body">
-                        <form method="POST" action="{{ route('booking.update', $booking->id) }}"  role="form" enctype="multipart/form-data">
+                        <form method="POST" action="{{ route('booking.update', $bookings->id) }}"  role="form" enctype="multipart/form-data">
                             {{ method_field('PATCH') }}
                             @csrf
 

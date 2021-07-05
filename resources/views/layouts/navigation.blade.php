@@ -17,7 +17,7 @@
                          <div class="account-wrap">
                             <div class="account-item account-item--style2 clearfix js-item-menu">
                                 <div class="image">
-                                    <img src="Admin/images/icon/avatar-01.jpg" alt="John Doe" />
+                                    <img src="{{ asset('Admin/images/icon/avatar-01.jpg') }}" alt="John Doe" />
                                 </div>
                                    <div class="content">
                                             <h5 class="name">
