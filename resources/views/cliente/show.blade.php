@@ -72,7 +72,7 @@
                         </div>
                         <div class="form-group">
                             <strong>Telefono:</strong>
-                            {{ $cliente->telefono }}
+                            {{ $clientes->telefono }}
                         </div>
                         <div class="form-group">
                             <strong>Ciudad:</strong>
@@ -80,7 +80,7 @@
                         </div>
                         <div class="form-group">
                             <strong>Users Id:</strong>
-                            {{ $cliente->users_id }}
+                            {{ $clientes->users_id }}
                         </div>
 
                     </div>
