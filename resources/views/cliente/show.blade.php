@@ -60,15 +60,15 @@
                         
                         <div class="form-group">
                             <strong>Name:</strong>
-                            {{ $cliente->name }}
+                            {{ $clientes->name }}
                         </div>
                         <div class="form-group">
                             <strong>Apelllido:</strong>
-                            {{ $cliente->apelllido }}
+                            {{ $clientes->apelllido }}
                         </div>
                         <div class="form-group">
                             <strong>Email:</strong>
-                            {{ $cliente->email }}
+                            {{ $clientes->email }}
                         </div>
                         <div class="form-group">
                             <strong>Telefono:</strong>
@@ -76,7 +76,7 @@
                         </div>
                         <div class="form-group">
                             <strong>Ciudad:</strong>
-                            {{ $cliente->ciudad }}
+                            {{ $clientes->ciudad }}
                         </div>
                         <div class="form-group">
                             <strong>Users Id:</strong>

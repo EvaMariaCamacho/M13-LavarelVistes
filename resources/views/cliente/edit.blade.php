@@ -50,7 +50,7 @@
                         <span class="card-title">Update Cliente</span>
                     </div>
                     <div class="card-body">
-                        <form method="POST" action="{{ route('cliente.update', $cliente->id) }}"  role="form" enctype="multipart/form-data">
+                        <form method="POST" action="{{ route('cliente.update', $clientes->id) }}"  role="form" enctype="multipart/form-data">
                             {{ method_field('PATCH') }}
                             @csrf
 

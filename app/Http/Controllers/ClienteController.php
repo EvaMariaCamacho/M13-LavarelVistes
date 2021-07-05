@@ -31,8 +31,8 @@ class ClienteController extends Controller
      */
     public function create()
     {
-        $cliente = new Cliente();
-        return view('cliente.create', compact('cliente'));
+        $clientes = new Cliente();
+        return view('cliente.create', compact('clientes'));
     }
 
     /**
@@ -45,7 +45,7 @@ class ClienteController extends Controller
     {
         request()->validate(Cliente::$rules);
 
-        $cliente = Cliente::create($request->all());
+        $clientes = Cliente::create($request->all());
 
         return redirect()->route('cliente.index')
             ->with('success', 'Cliente created successfully.');
@@ -59,9 +59,9 @@ class ClienteController extends Controller
      */
     public function show($id)
     {
-        $cliente = Cliente::find($id);
+        $clientes = Cliente::find($id);
 
-        return view('cliente.show', compact('cliente'));
+        return view('cliente.show', compact('clientes'));
     }
 
     /**
@@ -72,9 +72,9 @@ class ClienteController extends Controller
      */
     public function edit($id)
     {
-        $cliente = Cliente::find($id);
+        $clientes = Cliente::find($id);
 
-        return view('cliente.edit', compact('cliente'));
+        return view('cliente.edit', compact('clientes'));
     }
 
     /**
@@ -84,11 +84,11 @@ class ClienteController extends Controller
      * @param  Cliente $cliente
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Cliente $cliente)
+    public function update(Request $request, Cliente $clientes)
     {
         request()->validate(Cliente::$rules);
 
-        $cliente->update($request->all());
+        $clientes->update($request->all());
 
         return redirect()->route('cliente.index')
             ->with('success', 'Cliente updated successfully');
@@ -101,7 +101,7 @@ class ClienteController extends Controller
      */
     public function destroy($id)
     {
-        $cliente = Cliente::find($id)->delete();
+        $clientes = Cliente::find($id)->delete();
 
         return redirect()->route('cliente.index')
             ->with('success', 'Cliente deleted successfully');
